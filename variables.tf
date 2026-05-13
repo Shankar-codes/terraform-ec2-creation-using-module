@@ -15,7 +15,7 @@ variable "sg_ids" {
 }
 
 variable "tags" {
-  type        = map()
+  type        = map
   default     = {
     Name = "catalogue"
   }
