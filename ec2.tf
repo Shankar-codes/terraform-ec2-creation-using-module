@@ -1,8 +1,8 @@
 module "catalogue" {
   source = "../terraform-aws-instance-module"
-  ami = var.ami_id
+  ami_id = var.ami_id
+  sg_ids = var.sg_ids
   instance_type = var.instance_type
-  vpc_security_group_ids = var.sg_ids
   tags = var.tags
 }
 
